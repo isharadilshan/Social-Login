@@ -23,43 +23,7 @@
 
     <div id="fb-root"></div>
     <!-- <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v4.0&appId=585398395331615&autoLogAppEvents=1"></script> -->
-    <script>
-
-
-        window.fbAsyncInit = function() {
-            FB.init({
-            appId      : '585398395331615', // App ID
-            channelUrl : '//www.example.com/channel.html', // Channel File
-            status     : true, // check login status
-            cookie     : true, // enable cookies to allow the server to access the session
-            xfbml      : true  // parse XFBML
-        });
-
-        FB.Event.subscribe('auth.authResponseChange', function(response) {
-            if (response.status === 'connected') {
-                testAPI();
-            } else {
-                console.log("Not Connected");
-            }
-        });
-
-        (function(d){
-            var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
-            if (d.getElementById(id)) {return;}
-            js = d.createElement('script'); js.id = id; js.async = true;
-            js.src = "//connect.facebook.net/en_US/all.js";
-            ref.parentNode.insertBefore(js, ref);
-            }(document));
-
-        function testAPI() {
-            FB.api('/me', function(response) {
-                console.log('Good to see you, ' + response.name + '.');
-            });
-            FB.api('/me/likes/325579044730857', function(response) {
-                console.log(response.data);
-            });
-        }
-    </script>
+    
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
