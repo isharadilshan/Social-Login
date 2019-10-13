@@ -16,6 +16,20 @@
 
                     You are logged in!
                 </div>
+
+                <div class="card-body">
+                    <a class="btn btn-link" href="{{ route('enroll') }}">
+                        {{ __('Enroll') }}
+                    </a>
+                </div>
+
+                <!-- <div class="card-body">
+                    <div class="fb-page" data-href="https://www.facebook.com/Back-End-Developer-325579044730857/" data-tabs="timeline" data-width="400" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                        <blockquote cite="https://www.facebook.com/Back-End-Developer-325579044730857/" class="fb-xfbml-parse-ignore">
+                            <a href="https://www.facebook.com/Back-End-Developer-325579044730857/">Back-End Developer</a>
+                        </blockquote>
+                    </div>
+                </div> -->
             </div>
         </div>
     </div>

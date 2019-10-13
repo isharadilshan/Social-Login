@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class HomeController extends Controller
 {
@@ -25,4 +26,24 @@ class HomeController extends Controller
     {
         return view('home');
     }
+
+    public function enroll(){
+
+        $user = Auth::user();
+        var_dump($this->parsePageSignedRequest(),$user->provider_id);
+
+    }
+
+    function parsePageSignedRequest() {
+
+        if (isset($_REQUEST['signed_request'])) {
+          $encoded_sig = null;
+          $payload = null;
+          list($encoded_sig, $payload) = explode('.', $_REQUEST['signed_request'], 2);
+          $sig = base64_decode(strtr($encoded_sig, '-_', '+/'));
+          $data = json_decode(base64_decode(strtr($payload, '-_', '+/'), true));
+          return $data;
+        }
+        return false;
+      }
 }
