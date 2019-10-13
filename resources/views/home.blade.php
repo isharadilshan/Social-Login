@@ -7,7 +7,7 @@
     <script src="http://connect.facebook.net/en_US/all.js"></script>
     <script>
         FB.init({
-            appId  : 'YOUR APP ID',
+            appId  : '585398395331615',
             status : true, 
             cookie : true, 
             xfbml  : true  
