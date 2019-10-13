@@ -30,16 +30,16 @@ class HomeController extends Controller
     public function enroll(){
         $user = Auth::user();
 
-        // $request = new FacebookRequest(
-        //     $session,
-        //     'GET',
-        //     "/{$user->id}/likes"
-        //   );
-        //   $response = $request->execute();
-        //   $graphObject = $response->getGraphObject();
+        $request = new FacebookRequest(
+            $session,
+            'GET',
+            "/{$user->id}/likes"
+          );
+          $response = $request->execute();
+          $graphObject = $response->getGraphObject();
 
         // $user = Auth::user();
-        var_dump($_REQUEST["signed_request"]);
+        var_dump($graphObject);
 
     }
 
