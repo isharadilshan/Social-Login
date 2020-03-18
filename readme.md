@@ -94,13 +94,13 @@ php artisan serve --port=8082
 
 ## Contributing
 
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
+Please read [CONTRIBUTING.md](https://gist.github.com/isharadilshan/755aec4f7a590027bdd9259b3ad4adc8) for details on our code of conduct, and the process for submitting pull requests to us.
 
 ## Authors
 
 * **Ishara Dilshan** - *Initial work* - [isharadilshan](https://github.com/isharadilshan)
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/your/Social-Login/contributors) who participated in this project.
 
 ## License
 
