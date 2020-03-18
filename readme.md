@@ -100,7 +100,7 @@ Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c6
 
 * **Ishara Dilshan** - *Initial work* - [isharadilshan](https://github.com/isharadilshan)
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/isharadilshan/Social-Login/contributors) who participated in this project.
 
 ## License
 
