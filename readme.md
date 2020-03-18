@@ -73,6 +73,8 @@ php artisan view:clear
 php artisan config:clear
 ```
 
+Configure social logins according to Laravel package [Socialite](https://laravel.com/docs/6.x/socialite)
+
 ## Running the development server
 
 Starting Laravel Development server
